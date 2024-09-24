@@ -1,0 +1,29 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #fff0f0;
+}
+
+.layout__content {
+    height: 100%;
+    flex: 1 1 100%;
+}
+
+.gl-page-content {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-content {
+    justify-content: center;
+}
