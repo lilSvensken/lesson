@@ -2,12 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Авторизация</title>
 
     <link rel="stylesheet" href="./styles/normalize.8.0.1.css">
     <link rel="stylesheet" href="./styles/reset.css">
+
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 20px;
+            }
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .block {
+            width: 100%;
+            height: 200px;
+            background-color: grey;
+        }
+
+        @media (min-width: 769px) {
+            .block {
+                width: 100px;
+            }
+        }
+
+        .block-desk {
+            width: 100px;
+            height: 200px;
+            background-color: #377f5a;
+        }
+
+        @media (max-width: 768px) {
+            .block-desk {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1200px) {
+            .block-desk {
+                background-color: tomato;
+            }
+        }
+    </style>
 </head>
 <body>
+<h1>Заголовок</h1>
+<div class="block"></div>
 
+<img class="image" src="images/mock/img.png" alt="изображение">
+
+<div class="block-desk"></div>
 </body>
 </html>

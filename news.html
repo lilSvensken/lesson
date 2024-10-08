@@ -6,8 +6,42 @@
 
     <link rel="stylesheet" href="./styles/normalize.8.0.1.css">
     <link rel="stylesheet" href="./styles/reset.css">
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 2fr 4fr 4fr 4fr;
+            gap: 10px;
+        }
+
+        .cell {
+            font-size: 40px;
+            background-color: #979797;
+            border: 3px dashed #000;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .cell:nth-child(3) {
+            /*grid-column-start: 1;*/
+            /*grid-column-end: 3;*/
+
+            grid-column: 1 / 4;
+            grid-row: 2 / 4;
+        }
+    </style>
 </head>
 <body>
-
+<div class="grid-container">
+    <div class="cell">1</div>
+    <div class="cell">2</div>
+    <div class="cell">3</div>
+    <div class="cell">4</div>
+    <div class="cell">5</div>
+</div>
 </body>
 </html>
