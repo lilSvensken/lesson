@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новостной сайт</title>
+
+    <link rel="stylesheet" href="../styles/normalize.8.0.1.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <style>
+        .flex-container {
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+        }
+
+        .main-content {
+            background-color: #f0f0f0;
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+
+        .main {
+            background-color: #ffffff;
+            padding: 15px;
+        }
+
+        .cards {
+            padding: 20px 0;
+        }
+
+        .card {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+            max-width: 300px; /* Ограничение максимальной ширины карточек */
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="header">Новостной портал</div>
+
+    <div class="main-content">
+        <div class="sidebar">
+            <h3>Меню</h3>
+            <ul>
+                <li>Главная</li>
+                <li>Новости</li>
+                <li>Спорт</li>
+                <li>Культура</li>
+                <li>Контакты</li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div>
+                <h2>Главные новости</h2>
+                <p>Здесь размещаются главные новости дня.</p>
+                <p>Последние события, эксклюзивные материалы и многое другое.</p>
+            </div>
+
+            <div class="cards">
+                <div class="card">Новость 1</div>
+                <div class="card">Новость 2</div>
+                <div class="card">Новость 3</div>
+                <div class="card">Новость 4</div>
+                <div class="card">Новость 5</div>
+                <div class="card">Новость 6</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">© 2024 Все права защищены</div>
+</div>
+</body>
+</html>
